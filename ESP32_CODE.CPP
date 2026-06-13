@@ -1,3 +1,56 @@
+/*
+===============================================================================
+Project : ESP32 Battery Monitoring and Data Logging System
+Author  : ALWIN & NADESH
+Platform: ESP32 + INA219 + Raspberry Pi
+
+Description:
+This program uses an INA219 current/voltage sensor to monitor battery
+parameters through the ESP32. The INA219 communicates with the ESP32 via
+the I2C interface.
+
+A hardware timer triggers data acquisition every 30 seconds. During each
+sampling cycle, the program measures:
+
+    - Battery Current (mA)
+    - Battery Voltage (V)
+    - Battery Power (mW)
+    - Accumulated Capacity (mAh)
+
+Battery capacity is calculated using the Coulomb Counting method by
+integrating current over time.
+
+The ESP32 also accepts UART commands from an external device:
+
+    START  -> Begin data transmission
+    STOP   -> Stop data transmission
+    RESET  -> Reset accumulated capacity value
+
+Based on the measured current, the battery operating state is determined:
+
+    Current < -20 mA  -> CHARGING
+    Current >  20 mA  -> DISCHARGING
+    Otherwise         -> IDLE
+
+The collected data is transmitted through Serial2 in CSV format to a
+Raspberry Pi or other data-logging device.
+
+Output Format:
+    Time(s),Current(mA),Voltage(V),Power(mW),Capacity(mAh),State
+
+Example:
+    120.0,450.235,12.456,5600.123,125.432,DISCHARGING
+
+Applications:
+    - Battery Monitoring Systems
+    - State of Charge (SoC) Estimation
+    - Energy Consumption Analysis
+    - Battery Data Logging
+    - Embedded Energy Management Systems
+
+===============================================================================
+*/
+
 #include <Wire.h>
 #include <Adafruit_INA219.h>
 
