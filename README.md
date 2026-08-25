@@ -29,5 +29,6 @@ DESIGN SPECIFICATIONS
 <img width="816" height="805" alt="image" src="https://github.com/user-attachments/assets/a434b00d-3f22-4d9a-be47-9490c28f194e" />
 
 OUTPUT
+
 <img width="874" height="432" alt="image" src="https://github.com/user-attachments/assets/2616f3ac-48ff-42b8-85a1-babd39c57af6" />
 
