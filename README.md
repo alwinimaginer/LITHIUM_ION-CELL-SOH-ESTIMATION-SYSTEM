@@ -16,19 +16,15 @@ Experiment: Li-ion 18650 cells cycled to failure under different loads and tempe
 
 Goal: Predict battery health metrics — Capacity, State of Health (SoH)
 
-GENERAL DATASET OVERVIEW
 
-Dataset 	Total Samples	   Unique Discharge Cycles     	Avg. Samples per Cycle     	Data Type
-
- B0005     	50,285         49,115 after cleaning             168	~290	          Discharge-only
-
- B0018	    34,866         33,948 after cleaning             132	~257	          Discharge-only
 
 DESIGN SPECIFICATIONS
 
 <img width="816" height="805" alt="image" src="https://github.com/user-attachments/assets/a434b00d-3f22-4d9a-be47-9490c28f194e" />
 
+
 OUTPUT
+
 
 <img width="874" height="432" alt="image" src="https://github.com/user-attachments/assets/2616f3ac-48ff-42b8-85a1-babd39c57af6" />
 
