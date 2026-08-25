@@ -8,7 +8,7 @@ To improve computational efficiency, the trained CNN–GRU model underwent unstr
 And the proposed ML model is uploaded in raspberry pi 5 and tested using real_time dataset from 18650 Lithium-ion battery with capacity of 2.6Ah with 3.7V nominal voltage.
 
 
-BATTERY DATASET details:
+BATTERY DATASET details
 
 Source: NASA Ames Prognostics Center of Excellence (PCoE)
 
@@ -24,5 +24,8 @@ Dataset 	Total Samples	   Unique Discharge Cycles     	Avg. Samples per Cycle   
 
  B0018	    34,866         33,948 after cleaning             132	~257	          Discharge-only
 
+DESIGN SPECIFICATIONS
+
+<img width="816" height="805" alt="image" src="https://github.com/user-attachments/assets/a434b00d-3f22-4d9a-be47-9490c28f194e" />
 
 
